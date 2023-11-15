@@ -2,7 +2,7 @@ package Esercizio15112023.Esercizio15112023.adapter;
 
 import java.time.LocalDate;
 
-public class Adapter extends Info implements DataSource{
+public class Adapter implements DataSource{
     private Info info;
     public Adapter(Info info){
         this.info=info;
