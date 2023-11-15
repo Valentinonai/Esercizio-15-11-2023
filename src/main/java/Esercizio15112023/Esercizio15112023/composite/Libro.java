@@ -15,7 +15,7 @@ public class Libro implements Interfaccia{
     private double price;
     private List<String> autori;
     private  List<Interfaccia> child;
-
+    @Override
     public void print(){
         System.out.println("Stampo il libro");
     }
