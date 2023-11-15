@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Sezione implements Interfaccia{
-    private List<Pagina> pagine=new ArrayList<>();
+    private List<Interfaccia> pagine=new ArrayList<>();
 
-    public void setPagine(Pagina p){
+    public void setPagine(Interfaccia p){
+        if(p instanceof Pagina ||p instanceof Sezione)
         pagine.add(p);
     }
     @Override

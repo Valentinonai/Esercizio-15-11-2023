@@ -12,12 +12,13 @@ public class CompositeRunner implements CommandLineRunner {
         Pagina p=new Pagina();
 
         Sezione s=new Sezione();
-        s.setPagine(p);
-        s.setPagine(p);
-        s.setPagine(p);
-        s.setPagine(p);
-        s.setPagine(p);
-        s.setPagine(p);
+        Sezione s1=new Sezione();
+        s1.setPagine(p);
+        s1.setPagine(p);
+        s1.setPagine(p);
+        s1.setPagine(p);
+        s1.setPagine(p);
+        s.setPagine(s1);
 
         Libro libro=new Libro(34, Arrays.asList("pippo","pluto","paperino"),Arrays.asList(s,s,s,p,p,p,p,p,p,p,p));
         System.out.println("Il numero totale delle pagine è: "+ libro.calcolaPagine());
