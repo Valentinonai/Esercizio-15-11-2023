@@ -14,7 +14,7 @@ import java.util.List;
 public class Libro implements Interfaccia{
     private double price;
     private List<String> autori;
-    private  List<Interfaccia> child;
+    private  List<Sezione> child;
 
     public void print(){
         System.out.println("Stampo il libro");
@@ -22,7 +22,7 @@ public class Libro implements Interfaccia{
 
 
 
-    public void setChild(Interfaccia i){
+    public void setChild(Sezione i){
         child.add(i);
     }
     @Override

@@ -19,7 +19,9 @@ public class CompositeRunner implements CommandLineRunner {
         s.setPagine(p);
         s.setPagine(p);
 
-        Libro libro=new Libro(34, Arrays.asList("pippo","pluto","paperino"),Arrays.asList(s,s,s,p,p,p,p,p,p,p,p));
+        Libro libro=new Libro(34, Arrays.asList("pippo","pluto","paperino"),Arrays.asList(s,s,s));
         System.out.println("Il numero totale delle pagine è: "+ libro.calcolaPagine());
+
+        
     }
 }
