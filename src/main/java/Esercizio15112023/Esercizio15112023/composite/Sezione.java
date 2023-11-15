@@ -3,7 +3,7 @@ package Esercizio15112023.Esercizio15112023.composite;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Sezione extends Libro{
+public class Sezione implements Interfaccia{
     private List<Pagina> pagine=new ArrayList<>();
 
     public void setPagine(Pagina p){
